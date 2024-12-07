@@ -33,6 +33,10 @@ body {
   font-size: 100%;
   line-height: 1.5;
   min-height: 100vh;
+  background-color: #f9ece3;
+}
+hr {
+  border-bottom-color: transparent;
 }
 a {
   text-decoration: underline;
@@ -69,6 +73,9 @@ pre,
 video,
 iframe {
   max-width: 50em;
+}
+img {
+  width: 100%;
 }
 .footer {
   text-align: center;
@@ -107,6 +114,7 @@ figure {
   text-align: center;
   max-width: 50em;
   margin: 3em auto 4em;
+  padding: 0 30px;
 }
 .header a {
   text-decoration: none;
@@ -154,6 +162,11 @@ figure {
   margin: 1em auto;
   padding: 6px 50px;
 }
+@media (max-width: 768px) {
+  .post {
+    padding: 6px 30px;
+  }
+}
 .posts .post:first-child {
   margin-top: 0;
 }
@@ -170,6 +183,8 @@ figure {
 .posts .post-title::before {
   content: '#';
   color: #717485;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .posts .post-title:hover::before {
   color: #111;
@@ -177,6 +192,8 @@ figure {
 .posts .post-title .post-title-link {
   color: #111;
   text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .posts .post-content a {
   color: #111;
